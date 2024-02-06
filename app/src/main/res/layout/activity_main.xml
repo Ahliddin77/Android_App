@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".feature.main.MainActivity">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="name"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/firstArgument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="argument 1"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/secondArgument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="argument 2"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/buttonColor"
+            android:text="ADD"
+            android:textColor="@color/onButton" />
+
+        <Button
+            android:id="@+id/displayButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/buttonColor"
+            android:text="DISPLAY"
+            android:textColor="@color/onButton" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/buttonColor"
+            android:text="CLEAR"
+            android:textColor="@color/onButton" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/labelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="none"
+            android:textAlignment="textEnd"
+            android:textColor="@color/textColor"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sum"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/labelSumOfArgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/textColor"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
